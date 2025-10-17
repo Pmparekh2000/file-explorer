@@ -1,23 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import FileFolderExplorer from './components/FileFolderExplorer';
+import { DUMMY_FILE_FOLDER_DATA } from './utils/constants';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FileFolderExplorer fileFolderData={DUMMY_FILE_FOLDER_DATA}/>
     </div>
   );
 }
