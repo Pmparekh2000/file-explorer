@@ -1,101 +1,163 @@
-export const DUMMY_FILE_FOLDER_DATA = {
-    name: "File Explorer",
-    type: "folder",
-    children: [
-        {
-            name: "node_modules",
-            type: "folder",
-            children: []
-        },
-        {
-            name: "public",
-            type: "folder",
-            children: [
-                {
-                    name: "favicon.ico",
-                    type: "file"
-                },
-                {
-                    name: "index.html",
-                    type: "file"
-                },
-                {
-                    name: "manifest.json",
-                    type: "file"
-                },
-                {
-                    name: "robots.txt",
-                    type: "file"
-                }
-            ]
-        },
-        {
-            name: 'src',
-            type: 'folder',
-            children: [
-                {
-                    name: 'components',
-                    type: 'folder',
-                    children: [
-                        {
-                            name: 'Header.js',
-                            type: 'file'
-                        },
-                        {
-                            name: 'Footer.js',
-                            type: 'file'
-                        },
-                        {
-                            name: 'App.js',
-                            type: 'file'
-                        }
-                    ]
-                },
-                {
-                    name: 'App.css',
-                    type: 'file'
-                },
-                {
-                    name: 'App.test.js',
-                    type: 'file'
-                },
-                {
-                    name: 'index.css',
-                    type: 'file'
-                },
-                {
-                    name: "index.js",
-                    type: "file"
-                },
-                {
-                    name: "logo.csv",
-                    type: "file"
-                },
-                {
-                    name: "reportWebVitals.js",
-                    type: "setupTests.js"
-                },
-                {
-                    name: "setupTests.js",
-                    type: "file"
-                }
-            ]
-        },
-        {
-            name: ".gitignore",
-            type: "file"
-        },
-        {
-            name: "package.json",
-            type: "file"
-        },
-        {
-            name: "package-lock.json",
-            type: "file"
-        },
-        {
-            name: "README.md",
-            type: "file"
-        }
-    ]
-}
+export const DUMMY_FILE_FOLDER_DATA_2 = {
+    1: {
+        id: 1,
+        name: "File Explorer",
+        type: "folder",
+        parentId: null,
+        children: [2, 3, 4, 5, 6, 7, 8, 16, 17, 18],
+    },
+    2: {
+        id: 2,
+        name: "node_modules",
+        type: "folder",
+        parentId: 1,
+        children: [],
+    },
+    3: {
+        id: 3,
+        name: "public",
+        type: "folder",
+        parentId: 1,
+        children: [9, 10, 11, 12],
+    },
+    4: {
+        id: 4,
+        name: "src",
+        type: "folder",
+        parentId: 1,
+        children: [16, 17, 18, 19, 20, 21, 22],
+    },
+    5: {
+        id: 5,
+        name: ".gitignore",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    6: {
+        id: 6,
+        name: "package.json",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    7: {
+        id: 7,
+        name: "package-lock.json",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    8: {
+        id: 8,
+        name: "README.md",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    9: {
+        id: 9,
+        name: "favicon.ico",
+        type: "file",
+        parentId: 3,
+        children: [],
+    },
+    10: {
+        id: 10,
+        name: "index.html",
+        type: "file",
+        parentId: 3,
+        children: [],
+    },
+    11: {
+        id: 11,
+        name: "manifest.json",
+        type: "file",
+        parentId: 3,
+        children: [],
+    },
+    12: {
+        id: 12,
+        name: "robots.txt",
+        type: "file",
+        parentId: 3,
+        children: [],
+    },
+    16: {
+        id: 16,
+        name: "App.css",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    17: {
+        id: 17,
+        name: "App.test.js",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    18: {
+        id: 18,
+        name: "index.css",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    19: {
+        id: 19,
+        name: "index.js",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    20: {
+        id: 20,
+        name: "logo.csv",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    21: {
+        id: 21,
+        name: "reportWebVitals.js",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    22: {
+        id: 22,
+        name: "setupTests.js",
+        type: "file",
+        parentId: 1,
+        children: [],
+    },
+    23: {
+        id: 23,
+        name: "Header.js",
+        type: "file",
+        parentId: 26,
+        children: [],
+    },
+    24: {
+        id: 24,
+        name: "Footer.js",
+        type: "file",
+        parentId: 26,
+        children: [],
+    },
+    25: {
+        id: 25,
+        name: "App.js",
+        type: "file",
+        parentId: 26,
+        children: [],
+    },
+    26: {
+        id: 26,
+        name: "components",
+        type: "folder",
+        parentId: 4,
+        children: [23, 24, 25],
+    },
+};
