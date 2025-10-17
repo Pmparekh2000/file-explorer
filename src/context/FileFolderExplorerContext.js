@@ -5,7 +5,6 @@ export const FileFolderExplorerContext = createContext();
 
 const FileFolderExplorerContextWrapper = ({children}) => {
     const [nodes, setNodes] = useState(DUMMY_FILE_FOLDER_DATA);
-    const [currentNodeId, setCurrentNodeId] = useState(27);
 
     const handleDeleteNode = (currentNodeId) => {
         const copyNodes = {...nodes};
@@ -24,22 +23,27 @@ const FileFolderExplorerContextWrapper = ({children}) => {
 
     const handleAddNode = (parentNodeId, nodeName) => {
         const copyNodes = {...nodes};
-        copyNodes[currentNodeId] = {
-            id: currentNodeId,
+        const id = Date.now();
+        copyNodes[id] = {
+            id: id,
             name: nodeName,
             type: nodeName.includes(".") ? FILE : FOLDER,
             parentId: parentNodeId,
             children: [],
         };
-        console.log(parentNodeId);
         
-        copyNodes[parentNodeId].children = [currentNodeId, ...copyNodes[parentNodeId].children];
-        setCurrentNodeId(currentNodeId+1);
+        copyNodes[parentNodeId].children = [id, ...copyNodes[parentNodeId].children];
         setNodes(copyNodes);
     };
 
+    const handleEditNode = (currentNodeId, newNodeName) => {
+        const copyNodes = {...nodes};
+        copyNodes[currentNodeId].name = newNodeName;
+        setNodes(copyNodes);
+    }
+
     return (
-        <FileFolderExplorerContext.Provider value={{ nodes, handleDeleteNode, handleAddNode }}>
+        <FileFolderExplorerContext.Provider value={{ nodes, handleDeleteNode, handleAddNode, handleEditNode }}>
             {children}
         </FileFolderExplorerContext.Provider>
     )
