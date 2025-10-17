@@ -1,10 +1,13 @@
-export const DUMMY_FILE_FOLDER_DATA_2 = {
+export const FOLDER = "folder";
+export const FILE = "file";
+
+export const DUMMY_FILE_FOLDER_DATA = {
     1: {
         id: 1,
         name: "File Explorer",
         type: "folder",
         parentId: null,
-        children: [2, 3, 4, 5, 6, 7, 8, 16, 17, 18],
+        children: [2, 3, 4, 5, 6, 7, 8],
     },
     2: {
         id: 2,
@@ -25,7 +28,7 @@ export const DUMMY_FILE_FOLDER_DATA_2 = {
         name: "src",
         type: "folder",
         parentId: 1,
-        children: [16, 17, 18, 19, 20, 21, 22],
+        children: [26, 16, 17, 18, 19, 20, 21, 22],
     },
     5: {
         id: 5,
@@ -87,49 +90,49 @@ export const DUMMY_FILE_FOLDER_DATA_2 = {
         id: 16,
         name: "App.css",
         type: "file",
-        parentId: 1,
+        parentId: 4,
         children: [],
     },
     17: {
         id: 17,
         name: "App.test.js",
         type: "file",
-        parentId: 1,
+        parentId: 4,
         children: [],
     },
     18: {
         id: 18,
         name: "index.css",
         type: "file",
-        parentId: 1,
+        parentId: 4,
         children: [],
     },
     19: {
         id: 19,
         name: "index.js",
         type: "file",
-        parentId: 1,
+        parentId: 4,
         children: [],
     },
     20: {
         id: 20,
         name: "logo.csv",
         type: "file",
-        parentId: 1,
+        parentId: 4,
         children: [],
     },
     21: {
         id: 21,
         name: "reportWebVitals.js",
         type: "file",
-        parentId: 1,
+        parentId: 4,
         children: [],
     },
     22: {
         id: 22,
         name: "setupTests.js",
         type: "file",
-        parentId: 1,
+        parentId: 4,
         children: [],
     },
     23: {
